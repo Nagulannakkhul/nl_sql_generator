@@ -8,7 +8,7 @@ def run_query(query):
         conn = psycopg2.connect(
             dbname="nl_project_db",
             user="postgres",
-            password="1234",
+            password=input("Enter DB password: "),
             host="localhost",
             port="5432"
         )
@@ -29,7 +29,7 @@ def get_tables():
     conn = psycopg2.connect(
         dbname="nl_project_db",
         user="postgres",
-        password="1234",
+        password=input("Enter DB password: "),
         host="localhost",
         port="5432"
     )
@@ -52,7 +52,7 @@ def get_columns(table_name):
     conn = psycopg2.connect(
         dbname="nl_project_db",
         user="postgres",
-        password="1234",
+        password=input("Enter DB password: "),
         host="localhost",
         port="5432"
     )
